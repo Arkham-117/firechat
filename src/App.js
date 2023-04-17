@@ -80,11 +80,6 @@ function SignIn() {
       Sign in with Google
     </button>
 
-    <MainMenu />
-        <Routes> 
-          <Route path="/rules" element={<Rules />} /> 
-          <Route path="/about" element={<About />} /> 
-        </Routes>
     </>
   )
 
