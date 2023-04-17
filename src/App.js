@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import './App.css';
-import MainMenu from './components/MainMenu/MainMenu';
 
 // Import Firebase modules
 import firebase from 'firebase/compat/app';
@@ -15,11 +14,6 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { AiOutlineSend } from 'react-icons/ai';
 import { AiFillWechat } from 'react-icons/ai';
 import { AiOutlineGoogle } from 'react-icons/ai';
-
-//Import router and routes
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
-import Rules from './components/Rules';
-import About from './components/About';
 
 // Initialize Firebase
 firebase.initializeApp({
