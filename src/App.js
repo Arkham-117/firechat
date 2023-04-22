@@ -93,8 +93,8 @@ function ChatRoom() {
   const dummy = useRef();
   // Create a reference to the 'messages' collection in firestore
   const messagesRef = firestore.collection('messages');
-  // Query the last 25 messages in the collection
-  const query = messagesRef.orderBy('createdAt').limit(25);
+  // Query the last 250 messages in the collection
+  const query = messagesRef.orderBy('createdAt').limit(250);
 
   // Listen to changes in the 'messages' collection using the useCollectionData hook
   const [messages] = useCollectionData(query, { idField: 'id' });
